@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservacion</title>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' href='https://cdn-icons-png.flaticon.com/128/6349/6349766.png' />
+    <!-- css  -->
+    <link rel="stylesheet" href="paginareserva/css/reservacion.css">
+    <link rel="stylesheet" href="paginareserva/css/reserva2.css">
+</head>
+
+<body>
+    <style>
+
+    </style>
+
+
+
+    <header>
+        <h1>Disfruta de los sabores que más te gustan</h1>
+        <p>Si no deseas ordenar puedes oprimir en 'omitir'</p>
+        <a class="button1" href="/codigo.html">Omitir</a>
+    </a>
+    </header>
+    <main>
+        <!-- Pratos -->
+        <section data-identifier="dishes">
+            <h2>Mas populares</h2>
+            <div id="food">
+                <!-- Prato -->
+                
+                        <div class="card">
+                            <div class="content">
+                                <div class="back">
+                                    <div class="back-content">
+                                        <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                            width="50px" fill="#ffffff">
+
+                                            <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                            <g stroke-linejoin="round" stroke-linecap="round"
+                                                id="SVGRepo_tracerCarrier"></g>
+
+                                            <g id="SVGRepo_iconCarrier">
+
+                                                <img src="https://cdn-icons-png.flaticon.com/128/2884/2884642.png" alt="">
+
+                                            </g>
+
+                                        </svg>
+                                        <strong class="titulo">Kfc</strong>
+                                    </div>
+                                </div>
+                                <div class="front">
+
+                                    <div class="img">
+                                        <div class="circle">
+                                        </div>
+                                        <div class="circle" id="right">
+                                        </div>
+                                        <div class="circle" id="bottom">
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="front-content">
+                                        <div class="description">
+                                            <div class="title">
+                                                <p class="title">
+                                                    <span>Consulta el<a href="https://www.kfc.co/menu?utm_source=googlesemco&utm_medium=semgoogleco&utm_campaign=semco&gad_source=1&gclid=Cj0KCQiA6vaqBhCbARIsACF9M6mCqYScOXcu5BgE9PEDKbgjZOM3SwkNO0TuRYwFK404T4ERA_GAg6saAmVDEALw_wcB">menú</a></span>
+
+                                                </p>
+
+                                            </div>
+                                            <p class="card-footer">
+                                                <label>
+                                                    <span>Pedido</span>
+                                                    <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                        name="content type=" text">
+                                                </label>
+
+                                                <label>
+                                                    <span>Cantidad</span>
+                                                    <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                        type="number" required="">
+                                                </label>
+
+                                                <label>
+                                                    <span>Nombres-apellidos</span>
+                                                    <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                        type="text" required="">
+                                                </label>
+
+                                                <label>
+                                                    <span>Hora</span>
+                                                    <input id="input" placeholder="" class="input4" type="time"
+                                                        required="">
+                                                </label>
+
+                                                <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <!-- Prato -->
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                    width="50px" fill="#ffffff">
+
+                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                        id="SVGRepo_tracerCarrier"></g>
+
+                                    <g id="SVGRepo_iconCarrier">
+
+                                        <img src="https://cdn-icons-png.flaticon.com/128/732/732217.png" alt="">
+
+                                    </g>
+
+                                </svg>
+                                <strong class="titulo">Mcdonalds</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+
+
+                            <div class="front-content">
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <span>Consulta el<a href="https://www.mcdonalds.com/us/es-us/full-menu.html">menú</a></span>
+
+                                        </p>
+
+                                    </div>
+                                    <p class="card-footer">
+                                        <label>
+                                            <span>Pedido</span>
+                                            <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                name="content type=" text">
+                                        </label>
+
+                                        <label>
+                                            <span>Cantidad</span>
+                                            <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                type="number" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Nombres-apellidos</span>
+                                            <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                type="text" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Hora</span>
+                                            <input id="input" placeholder="" class="input4" type="time"
+                                                required="">
+                                        </label>
+
+                                        <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                    width="50px" fill="#ffffff">
+
+                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                        id="SVGRepo_tracerCarrier"></g>
+
+                                    <g id="SVGRepo_iconCarrier">
+
+                                        <img src="https://cdn-icons-png.flaticon.com/128/5977/5977578.png" alt="">
+
+                                    </g>
+
+                                </svg>
+                                <strong class="titulo">Burger king</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+
+
+                            <div class="front-content">
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <span>Consulta el<a href="https://www.bk.com.co/menu/#whopper">menú</a></span>
+
+                                        </p>
+
+                                    </div>
+                                    <p class="card-footer">
+                                        <label>
+                                            <span>Pedido</span>
+                                            <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                name="content type=" text">
+                                        </label>
+
+                                        <label>
+                                            <span>Cantidad</span>
+                                            <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                type="number" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Nombres-apellidos</span>
+                                            <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                type="text" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Hora</span>
+                                            <input id="input" placeholder="" class="input4" type="time"
+                                                required="">
+                                        </label>
+
+                                        <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                    width="50px" fill="#ffffff">
+
+                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                        id="SVGRepo_tracerCarrier"></g>
+
+                                    <g id="SVGRepo_iconCarrier">
+
+                                        <img src="https://cdn-icons-png.flaticon.com/128/2203/2203278.png" alt="">
+
+                                    </g>
+
+                                </svg>
+                                <strong class="titulo">Domino´s pizza</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+
+
+                            <div class="front-content">
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <span>Consulta el<a href="https://www.dominos.com.co/pages/order/menu#!/menu/category/viewall/">menú</a></span>
+
+                                        </p>
+
+                                    </div>
+                                    <p class="card-footer">
+                                        <label>
+                                            <span>Pedido</span>
+                                            <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                name="content type=" text">
+                                        </label>
+
+                                        <label>
+                                            <span>Cantidad</span>
+                                            <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                type="number" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Nombres-apellidos</span>
+                                            <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                type="text" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Hora</span>
+                                            <input id="input" placeholder="" class="input4" type="time"
+                                                required="">
+                                        </label>
+
+                                        <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Bebidas -->
+        <section data-identifier="drinks">
+            <h2>Servicio expres</h2>
+            <div id="drink">
+                <!-- bebida-->
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                    width="50px" fill="#ffffff">
+
+                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                        id="SVGRepo_tracerCarrier"></g>
+
+                                    <g id="SVGRepo_iconCarrier">
+
+                                        <img src="https://cdn-icons-png.flaticon.com/128/5977/5977591.png" alt="">
+
+                                    </g>
+
+                                </svg>
+                                <strong class="titulo">Starbucks</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+
+
+                            <div class="front-content">
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <span>Consulta el<a href="https://www.starbucks.com.co/menu">menú</a></span>
+
+                                        </p>
+
+                                    </div>
+                                    <p class="card-footer">
+                                        <label>
+                                            <span>Pedido</span>
+                                            <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                name="content type=" text">
+                                        </label>
+
+                                        <label>
+                                            <span>Cantidad</span>
+                                            <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                type="number" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Nombres-apellidos</span>
+                                            <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                type="text" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Hora</span>
+                                            <input id="input" placeholder="" class="input4" type="time"
+                                                required="">
+                                        </label>
+
+                                        <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bebida-->
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                    width="50px" fill="#ffffff">
+
+                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                        id="SVGRepo_tracerCarrier"></g>
+
+                                    <g id="SVGRepo_iconCarrier">
+
+                                        <img src="https://cdn-icons-png.flaticon.com/128/1625/1625062.png" alt="">
+
+                                    </g>
+
+                                </svg>
+                                <strong class="titulo">Subway</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+
+
+                            <div class="front-content">
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <span>Consulta el<a href="https://www.subway.com/es-MX/MenuNutrition/Menu/Sandwiches">menú</a></span>
+
+                                        </p>
+
+                                    </div>
+                                    <p class="card-footer">
+                                        <label>
+                                            <span>Pedido</span>
+                                            <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                name="content type=" text">
+                                        </label>
+
+                                        <label>
+                                            <span>Cantidad</span>
+                                            <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                type="number" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Nombres-apellidos</span>
+                                            <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                type="text" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Hora</span>
+                                            <input id="input" placeholder="" class="input4" type="time"
+                                                required="">
+                                        </label>
+
+                                        <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bebida-->
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                    width="50px" fill="#ffffff">
+
+                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                        id="SVGRepo_tracerCarrier"></g>
+
+                                    <g id="SVGRepo_iconCarrier">
+
+                                        <img src="https://cdn-icons-png.flaticon.com/128/4062/4062916.png" alt="">
+                                    </g>
+
+                                </svg>
+                                <strong class="titulo">Taco bell</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+
+
+                            <div class="front-content">
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <span>Consulta el<a href="https://tacobell.es/productos-tacobell/">menú</a></sp>
+
+                                        </p>
+
+                                    </div>
+                                    <p class="card-footer">
+                                        <label>
+                                            <span>Pedido</span>
+                                            <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                name="content type=" text">
+                                        </label>
+
+                                        <label>
+                                            <span>Cantidad</span>
+                                            <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                type="number" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Nombres-apellidos</span>
+                                            <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                type="text" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Hora</span>
+                                            <input id="input" placeholder="" class="input4" type="time"
+                                                required="">
+                                        </label>
+
+                                        <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Sobremesas -->
+        <section data-identifier="desserts">
+            <h2>Mas variado</h2>
+            <div id="dessert">
+                <!-- sobremesa -->
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                    width="50px" fill="#ffffff">
+
+                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                        id="SVGRepo_tracerCarrier"></g>
+
+                                    <g id="SVGRepo_iconCarrier">
+
+                                        <img src="https://cdn-icons-png.flaticon.com/128/1531/1531395.png" alt="">
+
+                                    </g>
+
+                                </svg>
+                                <strong class="titulo">Panda express</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+
+
+                            <div class="front-content">
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <span>Consulta el<a href="https://www.pandaexpress.ca/en/menu/entrees">menú</a></span>
+
+                                        </p>
+
+                                    </div>
+                                    <p class="card-footer">
+                                        <label>
+                                            <span>Pedido</span>
+                                            <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                name="content type=" text">
+                                        </label>
+
+                                        <label>
+                                            <span>Cantidad</span>
+                                            <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                type="number" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Nombres-apellidos</span>
+                                            <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                type="text" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Hora</span>
+                                            <input id="input" placeholder="" class="input4" type="time"
+                                                required="">
+                                        </label>
+
+                                        <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sobremesa -->
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                    width="50px" fill="#ffffff">
+
+                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                        id="SVGRepo_tracerCarrier"></g>
+
+                                    <g id="SVGRepo_iconCarrier">
+
+                                        <img src="https://cdn-icons-png.flaticon.com/128/7002/7002976.png" alt="">
+
+
+                                    </g>
+
+                                </svg>
+                                <strong class="titulo">Crepes y Waffles</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+
+
+                            <div class="front-content">
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <span>Consulta el<a href="https://crepesywaffles.com/menu">menú</a></span>
+
+                                        </p>
+
+                                    </div>
+                                    <p class="card-footer">
+                                        <label>
+                                            <span>Pedido</span>
+                                            <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                name="content type=" text">
+                                        </label>
+
+                                        <label>
+                                            <span>Cantidad</span>
+                                            <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                type="number" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Nombres-apellidos</span>
+                                            <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                type="text" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Hora</span>
+                                            <input id="input" placeholder="" class="input4" type="time"
+                                                required="">
+                                        </label>
+
+                                        <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sobremesa -->
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                    width="50px" fill="#ffffff">
+
+                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                        id="SVGRepo_tracerCarrier"></g>
+
+                                    <g id="SVGRepo_iconCarrier">
+
+                                        <img src="https://cdn-icons-png.flaticon.com/128/3988/3988249.png" alt="">
+
+
+                                    </g>
+
+                                </svg>
+                                <strong class="titulo">Red Lobster</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+
+
+                            <div class="front-content">
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <span>Consulta el<a href="https://www.zomato.com/es/goa/red-lobster-baga/menu">menú</a></span>
+
+                                        </p>
+
+                                    </div>
+                                    <p class="card-footer">
+                                        <label>
+                                            <span>Pedido</span>
+                                            <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                name="content type=" text">
+                                        </label>
+
+                                        <label>
+                                            <span>Cantidad</span>
+                                            <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                type="number" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Nombres-apellidos</span>
+                                            <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                type="text" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Hora</span>
+                                            <input id="input" placeholder="" class="input4" type="time"
+                                                required="">
+                                        </label>
+
+                                        <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sobremesa -->
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px"
+                                    width="50px" fill="#ffffff">
+
+                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+
+                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                        id="SVGRepo_tracerCarrier"></g>
+
+                                    <g id="SVGRepo_iconCarrier">
+
+                                        <img src="https://cdn-icons-png.flaticon.com/128/6108/6108623.png" alt="">
+
+                                    </g>
+
+                                </svg>
+                                <strong class="titulo">Legal Sea Foods</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+
+
+                            <div class="front-content">
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <span>Consulta el<a href="https://www.legalseafoods.com/locations-menus/">menú</a></span>
+
+                                        </p>
+
+                                    </div>
+                                    <p class="card-footer">
+                                        <label>
+                                            <span>Pedido</span>
+                                            <input placeholder="¿Que deseas ordenar?" class="input1"
+                                                name="content type=" text">
+                                        </label>
+
+                                        <label>
+                                            <span>Cantidad</span>
+                                            <input id="input" placeholder="¿Cuanto quieres?" class="input2"
+                                                type="number" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Nombres-apellidos</span>
+                                            <input id="input" placeholder="¿Quien va a reclamar?" class="input3"
+                                                type="text" required="">
+                                        </label>
+
+                                        <label>
+                                            <span>Hora</span>
+                                            <input id="input" placeholder="" class="input4" type="time"
+                                                required="">
+                                        </label>
+
+                                        <a class="button" onclick="selectFood(this, 'dessert')" data-identifier="food-option">Reservar</a>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="btn_next_step" onclick="popup()">
+            <p>Confirmar</p>
+        </button>
+    </footer>
+    <!-- js -->
+    <script src="/paginareserva/js/script.js"></script>
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

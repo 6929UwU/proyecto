@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+body {
+    position: relative;
+    min-height: 100svh;
+    width: 100%;
+    background: url("/paginareserva/images/login-img.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.darken-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-container > .logo {
+    height: 90px;
+    width: auto;
+}
+
+.login-container {
+    position: absolute;
+    top: calc(50% + 100px);
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 50px));
+    width: 100% !important;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.login-container > div {
+    width: 100%;
+    max-width: 400px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 2px solid rgba(24, 24, 24, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 30;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.login-cta-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 40;
+}
+
+.login-cta-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.login-cta-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.login-cta-img {
+    width: auto;
+    height: 100px;
+}
+
+.login-form-container {
+    overflow: auto;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+}
+
+.form {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.form h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.mostrar {
+    max-height: max-content;
+    opacity: 1;
+}
+
+.ocultar {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+
+a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateX(-10deg);
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+a:hover {
+    background-color: #0077be;
+    font-size: 17px;
+    transform: scale(1.05) rotateY(20deg) rotateX(10deg);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.button {
+    text-decoration: none;
+    background: transparent;
+    color: #fff;
+    float: left;
+    font-size: 15px;
+    font-weight: 400;
+    border: solid #0077be 1px;
+    padding: 10px 50px;
+    margin: 40px 0px 0px 25px;
+}
+
+.input {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 16px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input:hover,
+.input:focus {
+    border-color: #3b8df2;
+    background-color: rgba(255, 108, 108, 0.3);
+    outline: none;
+}
+
+a {
+    list-style: none;
+    text-decoration: underline;
+    color: #0dc0d0;
+}
